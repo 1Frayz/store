@@ -14,8 +14,8 @@
 Откройте терминал и выполните команду:
 
 ```bash
-git clone https://github.com/ваш-репозиторий.git
-cd ваш-репозиторий
+git clone https://github.com/1Frayz/store.git
+cd store
 ```
 
 ### 2. Создайте файл `.env`
