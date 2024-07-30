@@ -31,7 +31,7 @@ cp .env.example .env
 Используйте Docker Compose для запуска всех необходимых контейнеров:
 
 ```bash
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 Это запустит контейнеры для вашего приложения Laravel, базы данных MySQL и Nginx.
