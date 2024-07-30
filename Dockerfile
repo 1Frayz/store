@@ -40,6 +40,8 @@ COPY --chown=www-data:www-data . /var/www
 # Change current user to www
 USER www-data
 
+RUN sed -e '/max_execution_time = 360/' -i /etc/php/7.4/fpm/php.ini
+
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]
