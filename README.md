@@ -60,7 +60,15 @@ docker-compose exec app php artisan migrate
 docker-compose exec app php artisan key:generate
 ```
 
-### 7. Откройте приложение в браузере
+### 7. Создайте ссылку.
+
+Создайте ссылку для storage:
+
+```bash
+docker-compose exec app php artisan storage:link
+```
+
+### 8. Откройте приложение в браузере
 
 Откройте ваш браузер и перейдите по адресу:
 
