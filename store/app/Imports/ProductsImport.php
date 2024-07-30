@@ -18,7 +18,7 @@ class ProductsImport implements ToModel, WithHeadingRow
 {
     public function model(array $row)
     {
-        ini_set('max_execution_time', 540);
+        ini_set('max_execution_time', 360);
         $existingProduct = Product::where('external_code', $row['vnesnii_kod'])->first();
 
         if ($existingProduct) {
